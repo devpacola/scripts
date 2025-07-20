@@ -52,10 +52,7 @@ sudo apt-get autoremove -y
 echo "Cleaning apt cache..."
 sudo apt-get clean
 
----
-
 ## Removing User Configuration Files
-
 echo "Removing user configuration files..."
 
 # Get the original user who ran sudo
@@ -119,10 +116,7 @@ for dir in "${user_config_dirs[@]}"; do
   fi
 done
 
----
-
 ## Final System Cleanup
-
 echo "Removing leftover orphaned packages with deborphan (if installed)..."
 
 # Optionally remove orphaned packages via deborphan if it is installed
