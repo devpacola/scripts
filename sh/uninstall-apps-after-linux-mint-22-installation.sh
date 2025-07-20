@@ -134,3 +134,6 @@ else
 fi
 
 echo "Cleanup complete."
+
+# Link to execute in terminal:
+# curl -sL https://raw.githubusercontent.com/devpacola/scripts/main/sh/uninstall-apps-after-linux-mint-22-installation.sh | sudo bash
