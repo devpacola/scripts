@@ -24,18 +24,6 @@ echo "Applying distribution upgrade (optional compatibility changes)..."
 sudo apt dist-upgrade -y
 echo
 
-echo "Installing recommended drivers (if available)..."
-sudo ubuntu-drivers autoinstall
-echo
-
-echo "Checking firmware devices..."
-sudo fwupdmgr get-devices
-echo
-
-echo "Updating firmware..."
-sudo fwupdmgr update
-echo
-
 echo "Removing unnecessary packages..."
 sudo apt autoremove --purge -y
 echo
